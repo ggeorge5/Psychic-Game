@@ -27,6 +27,7 @@ function checkIfGameIsOver() {
     if (winningLetterCharCode === currentGuessCharCode) {
         guesses = [];
         wins ++;
+        alert('YOU WIN!!');
         chooseWinningCharacter();
     }
 
@@ -52,7 +53,7 @@ document.addEventListener('keyup', function (event) {
 
 
 /**
- GIVEN a game
- WHEN the game is over (by a win or loss)
- THEN the winningCharacter should be rechosen
+ GIVEN a game is clicking a key
+ WHEN the user clicks a key
+ THEN make it appear on the screen
  */
